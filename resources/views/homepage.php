@@ -62,13 +62,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#endeavors">Endeavors</a>
                     </li>
                      <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -138,8 +138,8 @@
                     </span>
                     <h4 class="service-heading">Geek</h4>
                     <p class="text-muted">The eternal student. The Environment. Science and Technology. Medicine. Philosophy.
-                    My studies have included all of these. My thesis was written on the Right of Privacy and I went back
-                    to school for Pre-Medicine, all the while leading outdoor trips.</p>
+                    My studies have included all of these and more. I have written a thesis on the Right of Privacy and also gone back
+                    to school for Pre-Medicine. Always more to learn.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -264,73 +264,31 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-sm-2 col-xs-1"></div>
+                <div class="col-sm-8 col-xs-10 about-content">
+
+<p>Paul Burdick is a 36 year old programmer, adventurer, and all around geek who is unwilling
+to call himself an enterpreneur because he refuses to put on airs. He frequently dabbles
+in startup life and has been the Chief Technology Officer for both <a href="http://ellislab.com">EllisLab</a> (creator of ExpressionEngine and CodeIgniter)
+and <a href="https://impactflow.com">ImpactFlow</a> . After his time at EllisLab, he joined up with the fine folks at 
+<a href="http://solspace.com">Solspace</a> and explored the realm of client work by working with the likes of Nokia, Turner Broadcasting System (TBS), IDEO, and Broadcast Music, Inc (BMI). </p>
+
+
+<p>He has a degree in Philosophy from <a href="http://www.reed.edu">Reed College</a> and returned to school a decade later to attend <a href="https://www.pdx.edu">Portland State University</a> for Pre-Medicine.
+Since 2003, he has been a certified <a href="http://www.nols.edu/wmi/courses/wfr.shtml">Wilderness First Responder</a> and then was a licensed Wilderness EMT for four years in Oregon. 
+He interned at the Portland State Outdoor Program and has used his wilderness medicine expertise and backcountry experience
+to guide trips around the Pacific Northwest for both schools and nonprofits.</p>
+
+<p>In 2013, after a long recovery from a knee injury, Paul completed a thru-hike of 
+the <a href="http://www.pcta.org">Pacific Crest Trail</a> and discovered how magical modern
+marvels like internal plumbing really are. He is an intermediate mountaineer who has 
+climbed multiple Cascade volcanoes as well as Mt. Whitney and Longs Peak. Other passions include
+trail running–the chillier and muddier the better–and long distance biking. Lately he has been considering a winter
+thru-hike of the Appalachian Trail.</p>
+
                 </div>
+
+                <div class="col-sm-2 col-xs-1"></div>
             </div>
         </div>
     </section>
