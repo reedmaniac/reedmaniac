@@ -62,16 +62,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#endeavors">Endeavors</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#passions">Passions</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="https://www.flickr.com/photos/133323973@N07/">Photos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="https://www.behance.net/reedmaniac">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -111,11 +114,11 @@
     </header>
     
     <!-- Endeavors Section -->
-    <section id="endeavors" class="bg-light-gray">
+    <section id="passions" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Endeavors</h2>
+                    <h2 class="section-heading">Passions</h2>
                     <h3 class="section-subheading text-muted">Less of a young professional - more of an ancient amateur.</h3>
                 </div>
             </div>
@@ -155,7 +158,46 @@
         </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
+    <!-- About Section -->
+    <section id="about" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">In case of emergency?  RUN!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-1"></div>
+                <div class="col-sm-8 col-xs-10 about-content">
+                    
+                   <p>Paul Burdick is a 36 year old programmer, adventurer, and all around geek who is unwilling
+to call himself an enterpreneur because he refuses to put on airs. He frequently dabbles
+in startup life and has been the Chief Technology Officer for both <a href="http://ellislab.com">EllisLab</a> (creator of ExpressionEngine and CodeIgniter)
+and <a href="https://impactflow.com">ImpactFlow</a> . After his time at EllisLab, he joined up with the fine folks at 
+<a href="http://solspace.com">Solspace</a> and explored the realm of client work by working with the likes of Nokia, Turner Broadcasting System (TBS), IDEO, and Broadcast Music, Inc (BMI). </p>
+
+
+<p>He has a degree in Philosophy from <a href="http://www.reed.edu">Reed College</a> and returned to school a decade later to attend <a href="https://www.pdx.edu">Portland State University</a> for Pre-Medicine.
+Since 2003, he has been a certified <a href="http://www.nols.edu/wmi/courses/wfr.shtml">Wilderness First Responder</a> and then was a licensed Wilderness EMT for four years in Oregon. 
+He interned at the Portland State Outdoor Program and has used his wilderness medicine expertise and backcountry experience
+to guide trips around the Pacific Northwest for both schools and nonprofits.</p>
+
+<p>In 2013, after a long recovery from a knee injury, Paul completed a thru-hike of 
+the <a href="http://www.pcta.org">Pacific Crest Trail</a> and discovered how magical modern
+marvels like internal plumbing really are. He is an intermediate mountaineer who has 
+climbed multiple Cascade volcanoes as well as Mt. Whitney and Longs Peak. Other passions include
+trail running–the chillier and muddier the better–and long distance biking. Lately he has been considering a winter
+thru-hike of the Appalachian Trail.</p>
+
+                </div>
+
+                <div class="col-sm-2 col-xs-1"></div>
+            </div>
+        </div>
+    </section>
+
+<!---
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -252,46 +294,8 @@
             </div>
         </div>
     </section>
+--->
 
-
-	<!-- About Section -->
-    <section id="about" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">In case of emergency?  RUN!</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-1"></div>
-                <div class="col-sm-8 col-xs-10 about-content">
-
-<p>Paul Burdick is a 36 year old programmer, adventurer, and all around geek who is unwilling
-to call himself an enterpreneur because he refuses to put on airs. He frequently dabbles
-in startup life and has been the Chief Technology Officer for both <a href="http://ellislab.com">EllisLab</a> (creator of ExpressionEngine and CodeIgniter)
-and <a href="https://impactflow.com">ImpactFlow</a> . After his time at EllisLab, he joined up with the fine folks at 
-<a href="http://solspace.com">Solspace</a> and explored the realm of client work by working with the likes of Nokia, Turner Broadcasting System (TBS), IDEO, and Broadcast Music, Inc (BMI). </p>
-
-
-<p>He has a degree in Philosophy from <a href="http://www.reed.edu">Reed College</a> and returned to school a decade later to attend <a href="https://www.pdx.edu">Portland State University</a> for Pre-Medicine.
-Since 2003, he has been a certified <a href="http://www.nols.edu/wmi/courses/wfr.shtml">Wilderness First Responder</a> and then was a licensed Wilderness EMT for four years in Oregon. 
-He interned at the Portland State Outdoor Program and has used his wilderness medicine expertise and backcountry experience
-to guide trips around the Pacific Northwest for both schools and nonprofits.</p>
-
-<p>In 2013, after a long recovery from a knee injury, Paul completed a thru-hike of 
-the <a href="http://www.pcta.org">Pacific Crest Trail</a> and discovered how magical modern
-marvels like internal plumbing really are. He is an intermediate mountaineer who has 
-climbed multiple Cascade volcanoes as well as Mt. Whitney and Longs Peak. Other passions include
-trail running–the chillier and muddier the better–and long distance biking. Lately he has been considering a winter
-thru-hike of the Appalachian Trail.</p>
-
-                </div>
-
-                <div class="col-sm-2 col-xs-1"></div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact">
