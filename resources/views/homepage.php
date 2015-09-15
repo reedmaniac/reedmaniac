@@ -76,6 +76,9 @@
                     <li>
                         <a class="page-scroll" href="https://www.behance.net/reedmaniac">Portfolio</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="http://shapelesschaos.com">Blog</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
