@@ -31,6 +31,9 @@ class Controller extends BaseController
 
     function postContact(Request $request)
     {
+        // Tempting to put some manner of throttling in here,
+        // but the odds are low so unnecessary for now.
+
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',

@@ -140,9 +140,9 @@
                         <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Geek</h4>
-                    <p class="text-muted">The eternal student. The Environment. Science and Technology. Medicine. Philosophy.
-                    My studies have included all of these and more. I have written a thesis on the Right of Privacy and also gone back
-                    to school for Pre-Medicine. Always more to learn.</p>
+                    <p class="text-muted">Eternal student of Nature, Science and Technology, Medicine, and Philosophy.
+                    Wrote thesis on the Right of Privacy and went back to school for Pre-Medicine. Programmer and designer.
+                    Wilderness First Responder and outdoor guide. Always more to learn.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -179,12 +179,12 @@ and <a href="https://impactflow.com">ImpactFlow</a> . After his time at EllisLab
 
 
 <p>He has a degree in Philosophy from <a href="http://www.reed.edu">Reed College</a> and returned to school a decade later to attend <a href="https://www.pdx.edu">Portland State University</a> for Pre-Medicine.
-Since 2003, he has been a certified <a href="http://www.nols.edu/wmi/courses/wfr.shtml">Wilderness First Responder</a> and then was a licensed Wilderness EMT for four years in Oregon. 
+Since 2003, he has been a certified <a href="http://www.nols.edu/wmi/courses/wfr.shtml">Wilderness First Responder</a> and later was a licensed Wilderness EMT for four years in Oregon. 
 He interned at the Portland State Outdoor Program and has used his wilderness medicine expertise and backcountry experience
 to guide trips around the Pacific Northwest for both schools and nonprofits.</p>
 
 <p>In 2013, after a long recovery from a knee injury, Paul completed a thru-hike of 
-the <a href="http://www.pcta.org">Pacific Crest Trail</a> and discovered how magical modern
+the <a href="http://www.pcta.org">Pacific Crest Trail</a> and discovered how truly magical modern
 marvels like internal plumbing really are. He is an intermediate mountaineer who has 
 climbed multiple Cascade volcanoes as well as Mt. Whitney and Longs Peak. Other passions include
 trail running–the chillier and muddier the better–and long distance biking. Lately he has been considering a winter
