@@ -212,6 +212,37 @@ h6 {
    opacity: 0.8;
 }
 
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover
+{
+    color: #1e9bda;
+    background-color: transparent;
+}
+
+.dropdown-menu
+{
+    background-color: rgba(0,0,0, 0.8);
+    color: #1e9bda;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover
+{
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a
+{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+{
+    color: #1e9bda;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 12px 0;

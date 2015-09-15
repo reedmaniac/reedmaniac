@@ -13,7 +13,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -70,14 +70,20 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="https://www.flickr.com/photos/133323973@N07/">Photos</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://www.behance.net/reedmaniac">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://shapelesschaos.com">Blog</a>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                             <li>
+                                <a href="https://www.flickr.com/photos/133323973@N07/">Photos</a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/reedmaniac">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="http://shapelesschaos.com">Blog</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -562,7 +568,7 @@ thru-hike of the Appalachian Trail.</p>
     <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
