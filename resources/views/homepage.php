@@ -97,13 +97,11 @@
         <div class="container">
             <div class="intro-text">
             	<div class="row">
-					<div class="col-md-5 col-sm-4 col-xs-4"></div>
-					<div class="col-md-2 col-sm-4 col-xs-4">
+					<div class="col-md-offset-5 col-sm-offset-4 col-xs-offset-4 col-md-2 col-sm-4 col-xs-4">
 						<div class="team-member">
 							<img src="img/paul-burdick-scruffy.jpeg" class="img-responsive img-circle" alt="Who's scruffy looking?">
 						</div>
 					</div>
-					<div class="col-md-5 col-sm-4 col-xs-4"></div>
 				</div>
                 <div class="intro-lead-in">Coder. Geek. Outdoorsman.</div>
                 <hr class="intro-divider" />
@@ -177,8 +175,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-2 col-xs-1"></div>
-                <div class="col-sm-8 col-xs-10 about-content">
+                <div class="col-sm-offset-2 col-xs-offset-1 col-sm-8 col-xs-10 about-content">
                     
                    <p>Paul Burdick is a 36 year old programmer, adventurer, and all around geek who is unwilling
 to call himself an enterpreneur because he refuses to put on airs. He frequently dabbles
@@ -200,8 +197,6 @@ trail running–the chillier and muddier the better–and long distance biking. 
 thru-hike of the Appalachian Trail.</p>
 
                 </div>
-
-                <div class="col-sm-2 col-xs-1"></div>
             </div>
         </div>
     </section>
