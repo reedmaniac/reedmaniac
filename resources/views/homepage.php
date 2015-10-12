@@ -175,7 +175,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-offset-2 col-xs-offset-1 col-sm-8 col-xs-10 about-content">
+                <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 about-content">
                     
                    <p>Paul Burdick is a 36 year old programmer, adventurer, and all around geek who is unwilling
 to call himself an enterpreneur because he refuses to put on airs. He frequently dabbles
