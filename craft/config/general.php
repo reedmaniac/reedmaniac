@@ -24,14 +24,14 @@ return array(
     'staging.reedmaniac.com' => array(
         'usePathInfo' => true,
         'omitScriptNameInUrls' => true,
-        'environmentVariables' => array('siteUrl' => 'http://staging.reedmaniac.com/blog', 'basePath' => '/home/forge/staging.reedmaniac.com/public/blog'),
+        'environmentVariables' => array('siteUrl' => 'http://staging.reedmaniac.com/blog/', 'basePath' => '/home/forge/staging.reedmaniac.com/public/blog'),
         'devMode' => true,
     ),
 
     'reedmaniac.com' => array(
         'usePathInfo' => true,
         'omitScriptNameInUrls' => true,
-        'environmentVariables' => array('siteUrl' => 'http://reedmaniac.com/blog', 'basePath' => '/home/forge/shapelesschaos.com/public/blog'),
+        'environmentVariables' => array('siteUrl' => 'http://reedmaniac.com/blog/', 'basePath' => '/home/forge/shapelesschaos.com/public/blog'),
         'devMode' => false,
     )
 );
