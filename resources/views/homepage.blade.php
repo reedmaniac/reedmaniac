@@ -74,6 +74,9 @@
                             <li>
                                 <a href="http://shapelesschaos.com">Blog</a>
                             </li>
+                            <li>
+                                <a href="/now">Current Work</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>

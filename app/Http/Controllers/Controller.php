@@ -24,6 +24,17 @@ class Controller extends BaseController
     }
 
     /**
+     *  Load the Homepage
+     *
+     *  @return View
+     */
+
+    function now()
+    {
+        return view('now');
+    }
+
+    /**
      *  Process Contact Form
      *
      *  @return bool

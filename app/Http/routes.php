@@ -12,6 +12,7 @@
 */
 
 Route::get('/', '\App\Http\Controllers\Controller@homepage');
+Route::get('now', '\App\Http\Controllers\Controller@now');
 
 Route::get('contact', '\App\Http\Controllers\Controller@postContact');
 Route::post('contact', '\App\Http\Controllers\Controller@postContact');
