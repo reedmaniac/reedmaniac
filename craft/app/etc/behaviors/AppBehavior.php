@@ -234,7 +234,7 @@ class AppBehavior extends BaseBehavior
 	 */
 	public function hasWrongEdition()
 	{
-		$licensedEdition = null; $this->getLicensedEdition();
+		$licensedEdition = null; //$this->getLicensedEdition();
 		return ($licensedEdition !== null && $licensedEdition != $this->getEdition() && !$this->canTestEditions());
 	}
 
