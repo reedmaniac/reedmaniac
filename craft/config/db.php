@@ -19,17 +19,17 @@ return array(
         'database'  => 'reedmaniac',
     ),
 
-    'shapelesschaos.reedmaniac.com' => array(
+    'staging.reedmaniac.com' => array(
         'server'    => 'localhost',
         'user'      => 'forge',
         'password'  => '3tUVemUka9ZY4RTlJ3bp',
-        'database'  => 'shapelesschaos-dev',
+        'database'  => 'blog-dev',
     ),
 
-     'shapelesschaos.com' => array(
+     'reedmaniac.com' => array(
         'server'    => 'localhost',
         'user'      => 'forge',
         'password'  => '3tUVemUka9ZY4RTlJ3bp',
-        'database'  => 'shapelesschaos',
+        'database'  => 'blog',
     )
 );
