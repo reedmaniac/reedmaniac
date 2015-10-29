@@ -1,0 +1,34 @@
+{% extends "_layout" %}
+
+{% block main %}
+    {% paginate craft.entries.section('blog').order('postDate desc').limit(10) as entries %}
+    
+        {% for entry in entries %}
+            {% include "entries/_entry_abstract" with { entry: entry } only %}
+        {% endfor %}
+        
+        
+        
+        {% if paginate.prevUrl or paginate.nextUrl %}
+        <div class="pattern mod2 group">
+        {% endif %}
+        
+        {% if paginate.prevUrl %}
+            {% if paginate.currentPage == 2 %}
+                <div style="float:left;"><a href="{{ url('') }}" class="newer">Newer</a></div>
+            {% else %}
+                <div style="float:left;"><a href="{{ paginate.prevUrl }}" class="newer">Newer</a></div>
+            {% endif %}
+        {% endif %}
+
+        {% if paginate.nextUrl %}
+            <div style="float:right;"><a href="{{ paginate.nextUrl }}" class="older">Older</a></div>
+        {% endif %}
+        
+        {% if paginate.prevUrl or paginate.nextUrl %}
+        </div>
+        {% endif %}
+        
+        
+    {% endpaginate %}
+{% endblock %}

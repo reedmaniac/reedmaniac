@@ -1,0 +1,9 @@
+{% extends "_layout" %}
+
+{% set page_title = entry.title %}
+{% set page_url = entry.url %}
+
+{% block main %}
+    {% include "entries/_entry_abstract" with { entry: entry } only %}
+{% endblock %}
+

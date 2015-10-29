@@ -1,0 +1,20 @@
+{% extends "_layout" %}
+
+{% set page_title = entry.title %}
+{% set page_url = entry.url %}
+
+{% block main %}
+
+    <div class="pattern mod group">
+        <article>
+            
+            <header>
+                <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>	
+            </header>
+            
+            {{ entry.body }}
+            
+        </article>
+    </div>
+    
+{% endblock %}

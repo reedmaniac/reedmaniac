@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ siteName }}</title>
+        <link>{{ siteUrl }}</link>
+        <atom:link href="http://functionn.github.com/rss.xml" rel="self" type="application/rss+xml" />
+        <description>A series of posts by Paul Burdick</description>
+        <language>en-us</language>
+        <pubDate>{{ now.rss }}</pubDate>
+        <lastBuildDate>{{ now.rss }}</lastBuildDate>
+
+        {% for entry in craft.entries.section('blog').limit(10).find() %}
+            <item>
+                <title>{{ entry.title }}</title>
+                <link>{{ entry.url }}</link>
+                <pubDate>{{ entry.postDate.rss }}</pubDate>
+                <author>{{ entry.author.fullName }}</author>
+                <guid>{{ entry.url }}</guid>
+                <description><![CDATA[
+                    {{ entry.body }}
+                ]]></description>
+            </item>
+        {% endfor %}
+    </channel>
+</rss>
