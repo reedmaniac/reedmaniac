@@ -24,7 +24,7 @@ class Controller extends BaseController
     }
 
     /**
-     *  Load the Homepage
+     *  Load the Now Page
      *
      *  @return View
      */
@@ -32,6 +32,17 @@ class Controller extends BaseController
     function now()
     {
         return view('now');
+    }
+
+    /**
+     *  Load the Blog Design
+     *
+     *  @return View
+     */
+
+    function blog()
+    {
+        return view('blog');
     }
 
     /**
