@@ -93,17 +93,17 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">What I'm Doing Now</h2>
-                    <h3 class="section-subheading text-muted">My <a href="http://sivers.org/nowff">Now</a> page</h3>
+                    <h3 class="section-subheading text-muted">The All Powerful <a href="http://sivers.org/nowff">Now</a> page</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 about-content">
                     
-                   <p><em>Last update was October 2015.</em></p>
+                   <p><em>Last update was November 2015.</em></p>
 
                     <p>Probably the most important thing I am doing is working on figuring out what is next for employment.
                     It has been about six weeks and I still have not found that perfect mixure of right job, right place, right time.
-                    Been primarily looking into senior developer positions and allowing the possibility of being a manager or direction of a 
+                    Been primarily looking into senior developer positions and allowing the possibility of being a manager or director of a 
                     product team too. A position like <a href="http://gearjunkie.com/columbia-director-of-toughness">Director of Toughness</a>
                     would also be acceptable.</p>
 
@@ -112,6 +112,28 @@
 
                     <p>In between those bits, I have been running, biking, and doing a bit of outdoor adventuring. Recently got my chance to do
                     a <a href="https://www.flickr.com/photos/133323973@N07/sets/72157659569404690">circumnavigation of Mt. Hood</a> by foot during some gorgeous autumn weather.</p>
+
+                    <p><strong>Favorite Charities</strong></p>
+
+                    <ul>
+                        <li>
+                            <a href="http://www.unrefugees.org">
+                                UN Refugee Agency
+                            </a> - Watch Neil Gaiman's <a href="http://donate.unhcr.org/international/neilgaiman/">video</a> to learn more.
+                        </li>
+
+                        <li>
+                            <a href="https://donate.wikimedia.org/w/index.php?title=Special:FundraiserLandingPage">
+                                Wikipedia
+                            </a> - A site that I probably visit an average of once a day. Worth supporting.
+                        </li>
+
+                        <li>
+                            <a href="http://oregonwild.org">
+                                Oregon Wild
+                            </a> - Protect and restore the wildlands, wildlife, and waters of Oregon for future generations. They even published one of my photos in their <a href="http://www.oregonwild.org/sites/default/files/pdf-files/oregon_wild_newsletter_fall_2015.pdf">newsletter</a>.
+                        </li>
+                    </ul>
 
 
                 </div>
