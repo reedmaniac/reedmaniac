@@ -9,7 +9,6 @@
     
     <title>Paul Burdick :: Now</title>
 
-
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -71,15 +70,14 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="/"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="/#passions">Passions</a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="/#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/blog">Blog</a>
                     </li>
 
                     <li class="dropdown">
@@ -92,10 +90,7 @@
                                 <a href="https://www.behance.net/reedmaniac">Portfolio</a>
                             </li>
                             <li>
-                                <a href="http://shapelesschaos.com">Blog</a>
-                            </li>
-                            <li>
-                                <a href="/now">Current Work</a>
+                                <a href="/now">Current Projects</a>
                             </li>
                         </ul>
                     </li>

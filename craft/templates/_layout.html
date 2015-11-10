@@ -1,114 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>{{ siteName }} | {% if page_title is defined %}{{page_title}}{%else%}Home{% endif %}</title>
-        
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <link rel="alternate" type="application/rss+xml" href="http://reedmaniac.com/blog/index.rss" title="Shapeless Chaos RSS" />
+<head>
 
-        <!-- hide css from IE6 but load for everyone else -->
-        <!--[if gte IE 7]><!-->
-        <link rel="stylesheet/less" media="screen, projection" href="/blog/assets/css/screen.less" />
-        <!-- <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ siteName }} | {% if page_title is defined %}{{page_title}}{%else%}Blog{% endif %}</title>
         
-        <!-- enable HTML5 elements in IE7+8 -->
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        
-        <script type="text/javascript" src="/blog/assets/js/less.js"></script>
-        
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        
-        
-<!--
-<rdf:RDF xmlns="http://web.resource.org/cc/"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<Work rdf:about="http://reedmaniac.com#about">
-<dc:title>Shapeless Chaos</dc:title>
-<dc:description>The human word is neither immortal nor invulnerable; but it is the power that orders our chaos, and the light by which we live.</dc:description>
-<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/1.0/" />
-</Work>
-<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/1.0/">
-<requires rdf:resource="http://web.resource.org/cc/Attribution" />
-<requires rdf:resource="http://web.resource.org/cc/Notice" />
-<requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
-<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
-<permits rdf:resource="http://web.resource.org/cc/Distribution" />
-<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
-<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
-</License>
-</rdf:RDF>
--->
+     <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-<meta property="og:title" content="{% if page_title is defined %}{{page_title}}{%else%}Shapeless Chaos{% endif %}" />
-<meta property="og:type" content="{% if page_title is defined %}article{%else%}website{% endif %}" />
-<meta property="og:url" content="{% if page_url is defined %}{{ page_url }}{%else%}http://reedmaniac.com/blog{% endif %}" />
-<meta property="og:site_name" content="Shapeless Chaos" />
-<meta property="og:description" content="blog about outdoors, technology, medicine, and philosophy" />
-
-<meta property="twitter:creator" content="reedmaniac" />
-<meta name="description" content="Paul Burdick is a web developer, outdoor guide, and student who writes about the outdoors, technology, medicine, and philosophy." />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/all.css">
     
-    </head>
+    <meta name="description" content="Coder. Geek. Vagabond. Thru-Hiker. Lover of Knowledge. Pursuer of Fun.">
+    <meta name="author" content="Paul Burdick">
+
+    <meta property="og:site_name" content="reedmaniac.com - Blog" />    
+    <meta property="og:description" content="Coder. Geek. Vagabond. Thru-Hiker. Lover of Knowledge. Pursuer of Fun." />
+
+    <meta property="og:title" content="{% if page_title is defined %}{{page_title}}{%else%}reedmaniac.com - Blog{% endif %}" />
+    <meta property="og:type" content="{% if page_title is defined %}article{%else%}website{% endif %}" />
+    <meta property="og:url" content="{% if page_url is defined %}{{ page_url }}{%else%}http://reedmaniac.com/blog{% endif %}" />
+
+    <meta property="twitter:creator" content="reedmaniac" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="reedmaniac">
+    <meta name="application-name" content="reedmaniac">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
 
 
-<body>
+<body id="page-top" class="index">
 
-    <header role="banner" class="group">
-        <a href="/" id="logo">
-            Shapeless<em>Chaos</em>
-        </a>
-    
-        <nav role="navigation">
-            <ul>
-                <li><a href="/blog/pages/about/">About</a></li>
-                <!-- <li><a href="http://www.flickr.com/photos/reedmaniac">Flickr</a></li> -->
-                <li><a href="https://twitter.com/reedmaniac">Twitter</a></li>
-                <li><a href="https://www.flickr.com/photos/133323973@N07">Flickr</a></li>
-                <li class="image"><a href="http://reedmaniac.com/blog/index.rss"><img src="/blog/assets/images/rss_20.png" width="20" height="20" /></a></li>
-            </ul>
-        </nav>	
-    </header>
-    
-    <div class="wrap group">
-        <div class="main" role="main">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Paul Burdick</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/blog">Blog</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                             <li>
+                                <a href="https://www.flickr.com/photos/133323973@N07/">Photos</a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/reedmaniac">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="/now">Current Work</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+<div class="container">
+    <div class="row">
+         <div class="col-sm-3 text-left">
+            <section id="blog_left_column">
+                <div class="text-right right-bar hidden-xs">
+                    <p align="right">
+                      <a href="/">home</a><br>
+                      <a href="/blog">blog</a><br>
+                      <a href="/#about">about me</a><br>
+                      <a href="/#contact">e-mail me</a><br>
+                      <a href="/blog/index.rss">RSS</a>
+                    </p>
+                </div>
+                <div class="text-center middle-child">
+                    <b><span class="menu">reedmaniac.com</span></b><br>
+                      <span class="menu2">– the blog –</span> 
+                </div>
+                <div class="text-right right-bar hidden-xs">
+                </div>
+            </section>
+         </div>
+
+         <div class="col-sm-9">
+
+        <section id="blog_content">
 
 {% block main %}
 {% endblock %}
-
+            </section>
 
         </div>
     </div>
-    
-    <footer role="banner">
-        <div>
-            <p>Build with <a href="http://buildwithcraft.com">Craft CMS</a>.
-            &nbsp; Hosted by <a href="http://enginehosting.com">EngineHosting</a>.
-            <br />
-            Designed by a fool with a text editor.</p>
+</div>
+
+
+
+   <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Paul Burdick 2015</span>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/reedmaniac" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://github.com/reedmaniac" title="GitHub"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/paulburdick" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://www.flickr.com/photos/133323973@N07/" title="Flickr"><i class="fa fa-flickr"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
-<!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-<script async src="https://static.medium.com/embed.js"></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script src="/js/app.js"></script>
 
-  ga('create', 'UA-69209507-1', 'auto');
-  ga('send', 'pageview');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-</script>
+      ga('create', 'UA-69209507-1', 'auto');
+      ga('send', 'pageview');
 
+    </script>
 
 </body>
+
 </html>

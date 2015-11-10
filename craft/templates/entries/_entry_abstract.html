@@ -1,11 +1,10 @@
-    <div class="mod group">
+    <div class="blog-entry">
         <article>
             <header>
-                <h2><a href="{{ entry.url }}">{{ entry.title }}</a> <span class="posted">{{ entry.postDate.format('j F Y') }}</span></h2>	
+                <h2><a href="{{ entry.url }}">{{ entry.title }}</a> <span class="blog-entry-posted">{{ entry.postDate.format('j F Y') }}</span></h2>	
             </header>
             
             {{ entry.body }}
-                        
         </article>          
     </div>
     

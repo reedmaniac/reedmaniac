@@ -1,6 +1,13 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
+@mixin border-radius($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
 /*!
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -149,8 +156,10 @@ h6 {
 
 
 .navbar-default {
+    margin-bottom: 0;
     border-color: transparent;
     background-color: rgba(0,0,0, 0.8);
+    @include border-radius(0);
 }
 
 .navbar-default .navbar-brand {
@@ -248,7 +257,7 @@ h6 {
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 12px 0;
+        padding: 10px 0;
         border: 0;
         background-color: rgba(0,0,0, 0.7);
         -webkit-transition: padding .3s;
@@ -278,7 +287,8 @@ h6 {
     }
 }
 
-header {
+header.page-header {
+    margin-top: 70px;
     text-align: center;
     color: #fff;
     background-attachment: scroll;
@@ -291,12 +301,12 @@ header {
     -o-background-size: cover;
 }
 
-header .intro-text {
+header.page-header .intro-text {
     padding-top: 70px;
     padding-bottom: 30px;
 }
 
-header .intro-text
+header.page-header .intro-text
 {
     .intro-lead-in {
         margin-bottom: 25px;
@@ -358,12 +368,12 @@ header .intro-text
 }
 
 @media(min-width:768px) {
-    header .intro-text {
+    header.page-header .intro-text {
         padding-top: 250px;
         padding-bottom: 150px;
     }
 
-    header .intro-text .intro-lead-in {
+    header.page-header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
@@ -371,7 +381,7 @@ header .intro-text
         line-height: 40px;
     }
 
-    header .intro-text .intro-heading {
+    header.page-header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -548,40 +558,227 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-section#blog
+section#blog_content
 {
-    margin-top: 10px;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 0;
+    min-height: 500px;
+
+    hr.blog-border {
+        margin: 50px auto;
+        padding: 0;
+        color: #f00;
+        background-color: #C7C7C7;
+        width: 45%;
+        border: 0;
+        height: 1px;
+    }
+
+    hr.blog-border:nth-of-type(10)
+    {
+        display:none;
+    }
 
     .blog-entry
     {
         h2
         {
-            font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-            text-transform: none;
             padding: 0;
             margin-top: 0;
             margin-bottom: 9px;
-            font-size: 2em;
+            font-size: 1.5em;
             line-height: 1em;
         }
 
         p, ul, li, blockquote
         {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 15px;
+            font-size: 1em;
             font-weight: 400;
+            line-height: 1.4em;
             color: #474747;
         }
 
-        .blog-entry-date
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 8px auto;
+            @include border-radius(5px);
+        }
+
+        img.no-center {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .blog-entry-posted
         {
             color: #999;
             text-transform: uppercase;
             display: inline-block;
             font-size: 14px;
         }
+
+        /* responsiveness 
+        --------------------------------------------- */
+
+        @media screen and (min-width : 768px) and (max-width : 1024px)
+        {
+           article
+            {
+                img {
+                    max-width: 680px;
+                }
+            }
+        }
+
+        @media screen and (min-width : 568px) and (max-width : 768px)
+        {
+            article
+            {
+                img {
+                    max-width: 475px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 568px)
+        {
+            article
+            {
+                margin: 0;
+                .posted {
+                    display:block;
+                    margin: 10px 0 0 0;
+                }
+                img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+section#blog_left_column
+{
+    margin: 50px 0 0 0;
+    padding: 0 0 0 0;
+
+    .middle-child
+    {
+        padding: 20px 0;
     }
 
+    .right-bar
+    {
+        padding-right: 10px;
+        min-height: 200px;
+        border-right: 1px solid #000;
+    }
+}
 
+/* --------------------------------------------- */
+/*  table display
+/* --------------------------------------------- */
+
+.blog-entry
+{
+    table
+    {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 0;
+        border-collapse: separate;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    table caption
+    {
+        color: #fff;
+        background-color: #e18728;
+        text-transform: uppercase;
+        font-family: serif;
+        font-weight: bold;
+        text-align: left;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    table thead th
+    {
+        color: #efefef;
+        background-color: #404040;
+        max-width: 50px;
+        text-align: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: serif;
+        padding: 5px;
+        font-size: 16px;
+        border-top: 1px solid #fff;
+        overflow: scroll;
+    }
+
+    table tbody tr, table tfoot tr
+    {
+        background-color: #fff;
+    }
+
+    table tbody tr:nth-child(even)
+    {
+        background-color: #f3f3f3;
+    }
+
+    table tbody td
+    {
+        padding: 2px 3px;
+        border-top: 1px solid #fff;
+        vertical-align: top;
+        line-height: 1.5em;
+    }
+
+    table tfoot td
+    {
+        font-weight: bold;
+        text-align: right;
+        padding: 2px 3px 2px 3px;
+        border-top: 1px solid #fff;
+        vertical-align: top;
+        font-size: 16px;
+    }
+
+    table tfoot td.total
+    {
+        padding-right: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
+.blog-pagination {
+    
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background-color: transparent;
+    padding: 12px;
+    margin: 0 -20px;
+    
+    a {
+        display: inline-block;
+        font-weight: 700;
+        height: 26px;
+        line-height: 26px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        span
+        {
+            margin: 0 5px;  
+        }
+    }
 }
 

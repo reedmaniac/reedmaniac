@@ -10,19 +10,23 @@
         
         
         {% if paginate.prevUrl or paginate.nextUrl %}
-        <div class="pattern mod2 group">
+        <div class="row blog-pagination">
+        {% endif %}
+
+        {% if paginate.nextUrl %}
+            <div class="col-xs-6 text-left"><a href="{{ paginate.nextUrl }}" class="older"><span class="glyphicon glyphicon-backward"></span> Older Entries</a></div>
+        {% else %}
+             <div class="col-xs-6 text-left"></div>
         {% endif %}
         
         {% if paginate.prevUrl %}
             {% if paginate.currentPage == 2 %}
-                <div style="float:left;"><a href="{{ url('') }}" class="newer">Newer</a></div>
+                <div class="col-xs-6 text-right"><a href="{{ url('') }}" class="newer">Newer Entries<span class="glyphicon glyphicon-forward"></span></a></div>
             {% else %}
-                <div style="float:left;"><a href="{{ paginate.prevUrl }}" class="newer">Newer</a></div>
+                <div class="col-xs-6 text-right"><a href="{{ paginate.prevUrl }}" class="newer">Newer Entries <span class="glyphicon glyphicon-forward"></span></a></div>
             {% endif %}
-        {% endif %}
-
-        {% if paginate.nextUrl %}
-            <div style="float:right;"><a href="{{ paginate.nextUrl }}" class="older">Older</a></div>
+        {% else %}
+             <div class="col-xs-6 text-right"></div>
         {% endif %}
         
         {% if paginate.prevUrl or paginate.nextUrl %}

@@ -18,6 +18,11 @@ elixir(function(mix) {
 	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './public/build/fonts/');
 	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './public/build/fonts/bootstrap/');
 
+	  // The blog uses these since it cannot get versioned files...yet
+	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './public/fonts/');
+	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './public/fonts/');
+	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './public/fonts/bootstrap/');
+
 	  mix.sass([
 	    	'app.scss',
 	       ],
@@ -31,7 +36,7 @@ elixir(function(mix) {
 	      .scripts([
 			'./node_modules/jquery/dist/jquery.js',
 			'./node_modules/bootstrap/dist/js/bootstrap.js',
-			'./resources/assets/js/jquery.easing.min.js',
+			'./resources/assets/js/jquery.easing.js',
 			'./resources/assets/js/classie.js',
 			'./resources/assets/js/cbpAnimatedHeader.js',
 			'./resources/assets/js/jqBootstrapValidation.js',

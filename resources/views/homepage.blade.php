@@ -73,13 +73,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#passions">Passions</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="/#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/blog">Blog</a>
                     </li>
 
                     <li class="dropdown">
@@ -90,9 +90,6 @@
                             </li>
                             <li>
                                 <a href="https://www.behance.net/reedmaniac">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="http://shapelesschaos.com">Blog</a>
                             </li>
                             <li>
                                 <a href="/now">Current Work</a>
@@ -107,7 +104,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="page-header">
         <div class="container">
             <div class="intro-text">
             	<div class="row">
