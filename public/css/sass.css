@@ -6037,7 +6037,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700; }
 
@@ -6445,6 +6444,7 @@ h2 {
       margin-top: 0;
       margin-bottom: 9px;
       font-size: 1.5em;
+      font-weight: 500;
       line-height: 1em; }
     section#blog_content
 .blog-entry p, section#blog_content

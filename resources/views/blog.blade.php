@@ -120,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Paul Burdick 2015</span>
+                    <span class="copyright">Copyright &copy; Paul Burdick 2015-2016</span>
                 </div>
                 <div class="col-md-4">
                 </div>
