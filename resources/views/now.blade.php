@@ -114,19 +114,24 @@
             <div class="row">
                 <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 about-content">
                     
-                   <p><em>Last update was November 2015.</em></p>
+                   <p><em>Last update was January 2016.</em></p>
 
-                    <p>Probably the most important thing I am doing is working on figuring out what is next for employment.
-                    It has been about six weeks and I still have not found that perfect mixure of right job, right place, right time.
-                    Been primarily looking into senior developer positions and allowing the possibility of being a manager or director of a 
-                    product team too. A position like <a href="http://gearjunkie.com/columbia-director-of-toughness">Director of Toughness</a>
-                    would also be acceptable.</p>
+                    <p>Towards the beginning of November, I gave up on the job search and decided to start doing a bit of
+                    independent contracting.  There were virtually no full times jobs that I was truly interested in and 
+                    multiple people and startup companies had approached me with a few projects, so I just bit the bullet.</p>
 
-                    <p>While working on that, I have taken a contract job to build a web application for a friend and have been using the opportunity to brush
-                    up on the Laravel 4.x to <a href="http://laravel.com">Laravel 5.1</a> changes.  Also using <a href="http://vuejs.org">Vue.js</a> to build a single page application for the site's frontend.</p>
+                    <p>In the past two months, I have expanded the <a href="https://www.weblively.com">WebLively</a> platform to include a new Forms area allowing professionals to send out fillable forms to clients/patients, have discussions, and monitor the results.
+                    I have also created an entirely new platform from scratch called <a href="https://bookbran.ch">Bookbranch</a>.  I did
+                    everything from designing the logo and the general look of the site, building an API backend in <a href="https://laravel.com">Laravel</a>, building a javascript application for the front-end using the new (and quite amazing) <a href="http://vuejs.org">Vue.js, while also setting up their new server and putting in a couple of tools for monitoring the server and running various backups.</p>
 
-                    <p>In between those bits, I have been running, biking, and doing a bit of outdoor adventuring. Recently got my chance to do
-                    a <a href="https://www.flickr.com/photos/133323973@N07/sets/72157659569404690">circumnavigation of Mt. Hood</a> by foot during some gorgeous autumn weather.</p>
+                    <p>Also been working on a platform for myself that I hope will help the outdoor community more easily find resources
+                    for planning successful adventures in the Pacific Northwest and eventually beyond. The design and the backend is complete for v1, but
+                    the front-end application and content will take me another few weeks to flesh out. Hoping to start previewing it to friends and other parties towards the end of February.</p>
+
+                    <p>Thanks to the contract work being flexbile with time, I have had the opportunity to start training for a couple personal
+                    outdoor challenges that I have had on my mind for a while. With those goals in mind, I have been a bit more analytical and 
+                    data-driven with my outdoor activities and exercise, which is a new thing for me as I typically just do whatever grabs my attention
+                    on a particular day. Hopefully I can remain relatively injury-free and have something to show for all of this hard work in the Spring.</p>
 
                     <p><strong>Favorite Charities</strong></p>
 
