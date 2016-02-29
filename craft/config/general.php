@@ -31,7 +31,7 @@ return array(
     'reedmaniac.com' => array(
         'usePathInfo' => true,
         'omitScriptNameInUrls' => true,
-        'environmentVariables' => array('siteUrl' => 'https://reedmaniac.com/blog/', 'basePath' => '/home/forge/shapelesschaos.com/public/blog'),
+        'environmentVariables' => array('siteUrl' => 'https://reedmaniac.com/blog/', 'basePath' => '/home/forge/reedmaniac.com/public/blog'),
         'devMode' => false,
     )
 );
