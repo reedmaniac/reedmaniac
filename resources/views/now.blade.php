@@ -118,25 +118,20 @@
             <div class="row">
                 <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 about-content">
                     
-                   <p><em>Last update was January 2016.</em></p>
+                   <p><em>Last update was June 2016.</em></p>
 
-                    <p>Towards the beginning of November, I gave up on the job search and decided to start doing a bit of
-                    independent contracting.  There were virtually no full times jobs that I was truly interested in and 
-                    multiple people and startup companies had approached me with a few projects, so I just bit the bullet.</p>
+                    <p>At the beginning of this month, I abandoned a life of having a stable place to live and started living out of my
+                    car so that I could spend more time in the outdoors, ostensibly to add new articles to
+                    <a href="https://theguide.io">The Guide</a>, which is my new online resource for helping people find the best
+                    outdoor trips in the Pacific Northwest and provide them with all the necessary information to
+                    complete the trip successfully.</p>
 
-                    <p>In the past two months, I have expanded the <a href="https://www.weblively.com">WebLively</a> platform to include a new Forms area allowing professionals to send out fillable forms to clients/patients, have discussions, and monitor the results.
-                    I have also created an entirely new platform from scratch called <a href="https://bookbran.ch">Bookbranch</a>.  I did
-                    everything from designing the logo and the general look of the site, building an API backend in <a href="https://laravel.com">Laravel</a>, building a javascript application for the front-end using the new (and quite amazing) <a href="http://vuejs.org">Vue.js, while also setting up their new server and putting in a couple of tools for monitoring the server and running various backups.</p>
+                    <p>During my outdoor travels, I am also attempting to continue doing a bit of client/contract work to help pay the food, 
+                    insurance, and gas bills. Finding this process a bit difficult, especially when a site develops a problem when
+                    I am in a remote location and the cell internet is not particularly fast. The learning process in this
+                    realm of remote digital work is ongoing.</p>
 
-                    <p>Also been working on a platform for myself that I hope will help the outdoor community more easily find resources
-                    for planning successful adventures in the Pacific Northwest and eventually beyond. The design and the backend is complete for v1, but
-                    the front-end application and content will take me another few weeks to flesh out. Hoping to start previewing it to friends and other parties towards the end of February.</p>
-
-                    <p>Thanks to the contract work being flexbile with time, I have had the opportunity to start training for a couple personal
-                    outdoor challenges that I have had on my mind for a while. With those goals in mind, I have been a bit more analytical and 
-                    data-driven with my outdoor activities and exercise, which is a new thing for me as I typically just do whatever grabs my attention
-                    on a particular day. Hopefully I can remain relatively injury-free and have something to show for all of this hard work in the Spring.</p>
-
+<!--
                     <p><strong>Favorite Charities</strong></p>
 
                     <ul>
@@ -158,7 +153,7 @@
                             </a> - Protect and restore the wildlands, wildlife, and waters of Oregon for future generations. They even published one of my photos in their <a href="http://www.oregonwild.org/sites/default/files/pdf-files/oregon_wild_newsletter_fall_2015.pdf">newsletter</a>.
                         </li>
                     </ul>
-
+-->
 
                 </div>
             </div>
