@@ -118,7 +118,19 @@
             <div class="row">
                 <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 about-content">
                     
-                   <p><em>Last update was June 2016.</em></p>
+                   
+
+                <p><em>August 2016.</em></p>
+
+                    <p>At the beginning of this month, I started a job as a Senior Software Engineer at <a href="https://www.vacasa.com">Vacasa</a> in Portland, Oregon. Will be focusing a great deal of my time on improving and expanding their relatively young API, while also improving their
+                    existing codebase and database as much as I can. They have experienced incredible growth in the past two years and the system is in
+                    desperate need of upgrades and modern coding processes to handle any further growth in both clients and functionality.</p>
+
+                    <p>As I get settled into a new job, new house, and new relationship, I am putting outdoor travels a bit on hold for this month, so 
+                    <a href="https://theguide.io">The Guide</a> will take a brief hiatus. As temperatures lower and the life molds itself into normal, I will once again start doing adventures and training trips that will make their way onto The Guide. Also looking forward to getting some Gear Guides on there as well as perhaps a few How-To articles.</p>
+
+
+                   <p><em>June 2016.</em></p>
 
                     <p>At the beginning of this month, I abandoned a life of having a stable place to live and started living out of my
                     car so that I could spend more time in the outdoors, ostensibly to add new articles to
