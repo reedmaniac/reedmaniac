@@ -118,56 +118,47 @@
             <div class="row">
                 <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 about-content">
                     
-                   
+                    
+<p><em>January 2017.</em></p>
 
-                <p><em>August 2016.</em></p>
+<p>Quickly approaching my six-month anniversary at <a href="https://www.vacasa.com">Vacasa</a> in Portland, Oregon. Thankfully, we 
+got the business to agree that a massive shift needed to happen with the codebase and we are <em>slowly</em> building up new microservices
+to replace existing parts of the monolith codebase. It is a herculean task when you remember we have a large organization still requiring new
+features and upgrades to existing functionality.</p>
 
-                    <p>At the beginning of this month, I started a job as a Senior Software Engineer at <a href="https://www.vacasa.com">Vacasa</a> in Portland, Oregon. Will be focusing a great deal of my time on improving and expanding their relatively young API, while also improving their
-                    existing codebase and database as much as I can. They have experienced incredible growth in the past two years and the system is in
-                    desperate need of upgrades and modern coding processes to handle any further growth in both clients and functionality.</p>
+<p>After a brief adjustment period to having a full-time job and less freedom to simply run off whenever I please, I was able to schedule quite a number
+of mini-adventures around the PNW. Completed a self-supported trail run around Mt. Hood via the 40 mile Timberline Lodge and also have had multiple 
+ski trips (thanks to newly purchased boots and backcountry skis!). This Spring I am once again becoming certified as a Wilderness First Responder and
+have scheduled a week of mountaineering training on Rainier to help expand my technical skills.</p>
 
-                    <p>As I get settled into a new job, new house, and new relationship, I am putting outdoor travels a bit on hold for this month, so 
-                    <a href="https://theguide.io">The Guide</a> will take a brief hiatus. As temperatures lower and the life molds itself into normal, I will once again start doing adventures and training trips that will make their way onto The Guide. Also looking forward to getting some Gear Guides on there as well as perhaps a few How-To articles.</p>
+<p>As I find time, I will continue expanding <a href="https://theguide.io">The Guide</a> with the best trips I have completed. Finding the 
+right details and maps continue to be challenging, but I can only hope my efforts are useful to others.</p>
 
-                    <hr>
+	<hr>
 
+<p><em>August 2016.</em></p>
 
-                   <p><em>June 2016.</em></p>
+<p>At the beginning of this month, I started a job as a Senior Software Engineer at <a href="https://www.vacasa.com">Vacasa</a> in Portland, Oregon. Will be focusing a great deal of my time on improving and expanding their relatively young API, while also improving their
+existing codebase and database as much as I can. They have experienced incredible growth in the past two years and the system is in
+desperate need of upgrades and modern coding processes to handle any further growth in both clients and functionality.</p>
 
-                    <p>At the beginning of this month, I abandoned a life of having a stable place to live and started living out of my
-                    car so that I could spend more time in the outdoors, ostensibly to add new articles to
-                    <a href="https://theguide.io">The Guide</a>, which is my new online resource for helping people find the best
-                    outdoor trips in the Pacific Northwest and provide them with all the necessary information to
-                    complete the trip successfully.</p>
+<p>As I get settled into a new job, new house, and new relationship, I am putting outdoor travels a bit on hold for this month, so 
+<a href="https://theguide.io">The Guide</a> will take a brief hiatus. As temperatures lower and the life molds itself into normal, I will once again start doing adventures and training trips that will make their way onto The Guide. Also looking forward to getting some Gear Guides on there as well as perhaps a few How-To articles.</p>
 
-                    <p>During my outdoor travels, I am also attempting to continue doing a bit of client/contract work to help pay the food, 
-                    insurance, and gas bills. Finding this process a bit difficult, especially when a site develops a problem when
-                    I am in a remote location and the cell internet is not particularly fast. The learning process in this
-                    realm of remote digital work is ongoing.</p>
+	<hr>
 
-<!--
-                    <p><strong>Favorite Charities</strong></p>
+<p><em>June 2016.</em></p>
 
-                    <ul>
-                        <li>
-                            <a href="http://www.unrefugees.org">
-                                UN Refugee Agency
-                            </a> - Watch Neil Gaiman's <a href="http://donate.unhcr.org/international/neilgaiman/">video</a> to learn more.
-                        </li>
+<p>At the beginning of this month, I abandoned a life of having a stable place to live and started living out of my
+car so that I could spend more time in the outdoors, ostensibly to add new articles to
+<a href="https://theguide.io">The Guide</a>, which is my new online resource for helping people find the best
+outdoor trips in the Pacific Northwest and provide them with all the necessary information to
+complete the trip successfully.</p>
 
-                        <li>
-                            <a href="https://donate.wikimedia.org/w/index.php?title=Special:FundraiserLandingPage">
-                                Wikipedia
-                            </a> - A site that I probably visit an average of once a day. Worth supporting.
-                        </li>
-
-                        <li>
-                            <a href="http://oregonwild.org">
-                                Oregon Wild
-                            </a> - Protect and restore the wildlands, wildlife, and waters of Oregon for future generations. They even published one of my photos in their <a href="http://www.oregonwild.org/sites/default/files/pdf-files/oregon_wild_newsletter_fall_2015.pdf">newsletter</a>.
-                        </li>
-                    </ul>
--->
+<p>During my outdoor travels, I am also attempting to continue doing a bit of client/contract work to help pay the food, 
+insurance, and gas bills. Finding this process a bit difficult, especially when a site develops a problem when
+I am in a remote location and the cell internet is not particularly fast. The learning process in this
+realm of remote digital work is ongoing.</p>
 
                 </div>
             </div>
