@@ -119,6 +119,19 @@
                 <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 about-content">
                     
                     
+
+<p><em>April 2017.</em></p>
+
+<p>After eight months at Vacasa, I decided that it was time for me to move on and explore other opportunities. The people were excellent and I will miss them dearly, but the structure of the Engineering department and the management of the company as a whole did not leave me with any room to grow nor contribute as much as I desired. Prior to leaving, I completed a new microservice for <a href="http://www.businesswire.com/news/home/20170420006085/en/Vacasa-Launches-Yield-Management-2.0-Lead-Vacation">Rates/Yield Management</a> that will  be the foundation of Vacasa's nightly rental rates for years to come. This was Vacasa's first microservice and hopefully a solid example for all the ones to come.</p>
+
+<p>Now the hunt for the next exciting adventure or employment opportunity begins. Already this year I have completely my fifth <a href="https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/">Wilderness First Responder course</a> and spent 8 days up on Mt. Rainier doing Alpine Ascent's <a href="https://www.alpineascents.com/school/rainier-prep/">Denail Prep course</a>, which greatly expanded my technical mountaineering and winter camping skills. It was a hoot and a half.</p>
+
+<p>There is money in the bank and time to contemplate, so I will be deliberate with my next step. My dream is to somehow meld my love of outdoors and technology into long term, steady employment that still allows me amble time to for my own independent and challenging outdoor projects.</p>
+
+    <hr>
+
+
+
 <p><em>January 2017.</em></p>
 
 <p>Quickly approaching my six-month anniversary at <a href="https://www.vacasa.com">Vacasa</a> in Portland, Oregon. Thankfully, we 
@@ -127,7 +140,7 @@ to replace existing parts of the monolith codebase. It is a herculean task when 
 features and upgrades to existing functionality.</p>
 
 <p>After a brief adjustment period to having a full-time job and less freedom to simply run off whenever I please, I was able to schedule quite a number
-of mini-adventures around the PNW. Completed a self-supported trail run around Mt. Hood via the 40 mile Timberline Lodge and also have had multiple 
+of mini-adventures around the PNW. Completed a self-supported trail run around Mt. Hood via the <a href="https://theguide.io/articles/2016/circumnavigation-of-mt-hood-on-the-timberline-trail">40 mile Timberline Trail</a> and also have had multiple 
 ski trips (thanks to newly purchased boots and backcountry skis!). This Spring I am once again becoming certified as a Wilderness First Responder and
 have scheduled a week of mountaineering training on Rainier to help expand my technical skills.</p>
 
