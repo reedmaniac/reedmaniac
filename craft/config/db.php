@@ -12,7 +12,7 @@ return array(
         'tablePrefix' => 'craft',
     ),
 
-    'reedmaniac.app' => array(
+    'reedmaniac.dev' => array(
         'server'    => 'localhost',
         'user'      => 'homestead',
         'password'  => 'secret',

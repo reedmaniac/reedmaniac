@@ -14,10 +14,10 @@ return array(
         'userSessionDuration' => '0', // when browser closes
     ),
 
-    'reedmaniac.app' => array(
+    'reedmaniac.dev' => array(
         'usePathInfo' => true,
         'omitScriptNameInUrls' => true,
-        'environmentVariables' => array('siteUrl' => 'http://reedmaniac.app/blog/', 'basePath' => '/home/vagrant/Code/reedmaniac/public/blog'),
+        'environmentVariables' => array('siteUrl' => 'http://reedmaniac.dev/blog/', 'basePath' => '/home/vagrant/Code/reedmaniac/public/blog'),
         'devMode' => true,
     ),
 
