@@ -17,21 +17,21 @@ return array(
     'reedmaniac.dev' => array(
         'usePathInfo' => true,
         'omitScriptNameInUrls' => true,
-        'environmentVariables' => array('siteUrl' => 'http://reedmaniac.dev/blog/', 'basePath' => '/home/vagrant/Code/reedmaniac/public/blog'),
+        'environmentVariables' => array('siteUrl' => 'http://reedmaniac.dev/', 'basePath' => '/home/vagrant/Code/reedmaniac/public'),
         'devMode' => true,
     ),
 
     'staging.reedmaniac.com' => array(
         'usePathInfo' => true,
         'omitScriptNameInUrls' => true,
-        'environmentVariables' => array('siteUrl' => 'http://staging.reedmaniac.com/blog/', 'basePath' => '/home/forge/staging.reedmaniac.com/public/blog'),
+        'environmentVariables' => array('siteUrl' => 'http://staging.reedmaniac.com/', 'basePath' => '/home/forge/staging.reedmaniac.com/public'),
         'devMode' => true,
     ),
 
     'reedmaniac.com' => array(
         'usePathInfo' => true,
         'omitScriptNameInUrls' => true,
-        'environmentVariables' => array('siteUrl' => 'https://reedmaniac.com/blog/', 'basePath' => '/home/forge/reedmaniac.com/public/blog'),
+        'environmentVariables' => array('siteUrl' => 'https://reedmaniac.com/', 'basePath' => '/home/forge/reedmaniac.com/public'),
         'devMode' => false,
     )
 );
