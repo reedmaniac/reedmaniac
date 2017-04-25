@@ -14,9 +14,9 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
 
       // Fonts need to be put in the correct spots for CSS versioning
-	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './public/build/fonts/');
-	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './public/build/fonts/');
-	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './public/build/fonts/bootstrap/');
+// 	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './public/build/fonts/');
+// 	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './public/build/fonts/');
+// 	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './public/build/fonts/bootstrap/');
 
 	  // The blog uses these since it cannot get versioned files...yet
 	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './public/fonts/');
