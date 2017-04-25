@@ -8898,6 +8898,14 @@ section#blog_left_column .right-bar {
   border-right: 1px solid #000;
 }
 
+section#blog_left_column .blog-name {
+  font-weight: bold;
+}
+
+section#blog_left_column .blog-witty-message {
+  font-size: 10px;
+}
+
 /* --------------------------------------------- */
 
 /*  table display
