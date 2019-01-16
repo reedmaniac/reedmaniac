@@ -1,0 +1,276 @@
+dateModified: 1547671110
+email:
+  fromEmail: reedmaniac@gmail.com
+  fromName: Shapelesschaos
+  template: null
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  8bff2831-7490-483f-aef0-6a44d2c46965:
+    name: 'Tags (Auto-created)'
+  a2c60ad8-a800-49bf-911c-6e4b2bef558e:
+    name: Default
+fields:
+  338a8f93-d9dd-486b-821a-b6760d611988:
+    contentColumnType: string
+    fieldGroup: a2c60ad8-a800-49bf-911c-6e4b2bef558e
+    handle: body
+    instructions: ''
+    name: Body
+    searchable: '1'
+    settings:
+      cleanupHtml: ''
+      columnType: text
+      purifyHtml: ''
+      redactorConfig: paul.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  7f5d73a3-ac11-4842-9a58-3fa5b8a2a3cc:
+    contentColumnType: text
+    fieldGroup: a2c60ad8-a800-49bf-911c-6e4b2bef558e
+    handle: oneField
+    instructions: ''
+    name: 'One Field'
+    searchable: '1'
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  99f0e3ee-e65c-455d-a2ef-f22c8b4770f0:
+    contentColumnType: string
+    fieldGroup: 8bff2831-7490-483f-aef0-6a44d2c46965
+    handle: tags
+    instructions: ''
+    name: Tags
+    searchable: '1'
+    settings:
+      localizeRelations: false
+      source: 'taggroup:cbce4974-3eab-4c5e-aa4d-663efa932fa0'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Tags
+  ac897f6e-b401-45ad-91d5-d6f27a2e7266:
+    contentColumnType: string
+    fieldGroup: a2c60ad8-a800-49bf-911c-6e4b2bef558e
+    handle: photo
+    instructions: ''
+    name: Photo
+    searchable: '1'
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:09a7669c-4699-4243-a629-ed4bdd93dbd0'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: '1'
+      singleUploadLocationSource: 'volume:09a7669c-4699-4243-a629-ed4bdd93dbd0'
+      singleUploadLocationSubpath: ''
+      sources: '*'
+      useSingleFolder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+  ebafc09a-8b0e-45fd-b099-c5949dceb79c:
+    contentColumnType: text
+    fieldGroup: a2c60ad8-a800-49bf-911c-6e4b2bef558e
+    handle: summary
+    instructions: ''
+    name: Summary
+    searchable: '1'
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+globalSets:
+  ae8f4e4c-a086-471b-aa49-8ebaa6e97093:
+    fieldLayouts:
+      cef1a86a-2cff-4a43-9d8f-7ecb7265a650:
+        tabs:
+          -
+            fields:
+              338a8f93-d9dd-486b-821a-b6760d611988:
+                required: '0'
+                sortOrder: '1'
+            name: Content
+            sortOrder: '1'
+    handle: testing
+    name: Testing
+plugins:
+  paul:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+routes:
+  857e76b6-3012-4d2d-b6be-10fa112fe2f0:
+    siteUid: null
+    sortOrder: '1'
+    template: pct.html
+    uriParts:
+      - pct
+    uriPattern: pct
+  d35acc69-03a1-4da8-8f5d-b38cfc5cfb64:
+    siteUid: null
+    sortOrder: '2'
+    template: entries/index.rss
+    uriParts:
+      - index.rss
+    uriPattern: index\.rss
+sections:
+  2dc50ce9-7e5d-4315-813b-a0c4191844d7:
+    enableVersioning: '1'
+    entryTypes:
+      abe5dbc5-63ca-44d5-a06b-f09680d90999:
+        fieldLayouts:
+          746dac8d-cb82-47a6-81d8-d49d75ec5050:
+            tabs:
+              -
+                fields:
+                  338a8f93-d9dd-486b-821a-b6760d611988:
+                    required: '1'
+                    sortOrder: '1'
+                  ebafc09a-8b0e-45fd-b099-c5949dceb79c:
+                    required: '0'
+                    sortOrder: '2'
+                name: Content
+                sortOrder: '1'
+        handle: blog
+        hasTitleField: '1'
+        name: Blog
+        sortOrder: null
+        titleFormat: null
+        titleLabel: Title
+    handle: blog
+    name: Blog
+    propagateEntries: '1'
+    siteSettings:
+      efb81fe5-0026-4043-b314-07899e78c399:
+        enabledByDefault: '1'
+        hasUrls: '1'
+        template: entries/_entry
+        uriFormat: 'entries/{slug}'
+    type: channel
+  90803805-41da-443b-baf4-1a33781c2c25:
+    enableVersioning: '1'
+    entryTypes:
+      1322d136-9213-49b6-a10a-d654811b2776:
+        fieldLayouts:
+          7c7610b6-1a72-4e87-b575-85b1f3bb50ab:
+            tabs:
+              -
+                fields:
+                  7f5d73a3-ac11-4842-9a58-3fa5b8a2a3cc:
+                    required: '0'
+                    sortOrder: '1'
+                name: 'Tab 1'
+                sortOrder: '1'
+        handle: sensectional
+        hasTitleField: '1'
+        name: Sensectional
+        sortOrder: '1'
+        titleFormat: null
+        titleLabel: Title
+    handle: sensectional
+    name: Sensectional
+    propagateEntries: '1'
+    siteSettings:
+      efb81fe5-0026-4043-b314-07899e78c399:
+        enabledByDefault: '1'
+        hasUrls: '1'
+        template: sensectional/_entry
+        uriFormat: 'sensectional/{slug}'
+    type: channel
+  b1759425-0604-49f1-bb5b-e10fa9f5817e:
+    enableVersioning: '1'
+    entryTypes:
+      2e7027bb-5329-4275-862f-023a61af7950:
+        fieldLayouts:
+          14742293-c355-4203-901d-397a51748bb3:
+            tabs:
+              -
+                fields:
+                  338a8f93-d9dd-486b-821a-b6760d611988:
+                    required: '1'
+                    sortOrder: '1'
+                name: 'Tab 1'
+                sortOrder: '1'
+        handle: pages
+        hasTitleField: '1'
+        name: Pages
+        sortOrder: null
+        titleFormat: null
+        titleLabel: Title
+    handle: pages
+    name: Pages
+    propagateEntries: '1'
+    siteSettings:
+      efb81fe5-0026-4043-b314-07899e78c399:
+        enabledByDefault: '1'
+        hasUrls: '1'
+        template: entries/_page
+        uriFormat: '{% if object.level == 1 %}pages/{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+    structure:
+      maxLevels: '3'
+      uid: f7d1bc83-f2f0-46e5-9a61-ece5c4a8a96f
+    type: structure
+siteGroups:
+  ab57d55e-7067-4d39-a9c3-ad62e63a457c:
+    name: 'reedmaniac.com (en-US)'
+sites:
+  efb81fe5-0026-4043-b314-07899e78c399:
+    baseUrl: '@siteUrl'
+    handle: en_us
+    hasUrls: '1'
+    language: en-US
+    name: 'reedmaniac.com (en-US)'
+    primary: '1'
+    siteGroup: ab57d55e-7067-4d39-a9c3-ad62e63a457c
+    sortOrder: '1'
+system:
+  edition: solo
+  live: true
+  name: reedmaniac.com
+  schemaVersion: 3.1.19
+  timeZone: America/Los_Angeles
+tagGroups:
+  cbce4974-3eab-4c5e-aa4d-663efa932fa0:
+    handle: default
+    name: Default
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+volumes:
+  09a7669c-4699-4243-a629-ed4bdd93dbd0:
+    handle: uploads
+    hasUrls: '1'
+    name: Uploads
+    settings:
+      path: '@basePath/assets/uploads'
+      url: '@siteUrl/assets/uploads'
+    sortOrder: '1'
+    type: craft\volumes\Local
+    url: null
+  67b8cb3f-f3a8-4840-b32a-cb33da271052:
+    handle: userPhotos
+    hasUrls: '0'
+    name: 'User Photos'
+    settings:
+      path: '@storage/userphotos'
+    sortOrder: '2'
+    type: craft\volumes\Local
+    url: null
+dateApplied: '2019-01-16 12:50:47'
