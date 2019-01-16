@@ -28,6 +28,16 @@ class ElementsService extends BaseApplicationComponent
 	 */
 	private $_searchResults;
 
+	/**
+	 * @var array
+	 */
+	private $_elementCleanup = array();
+
+	/**
+	 * @var
+	 */
+	private $_listeningForRequestEnd = false;
+
 	// Public Methods
 	// =========================================================================
 
@@ -211,6 +221,11 @@ class ElementsService extends BaseApplicationComponent
 			return array();
 		}
 
+		if ($justIds)
+		{
+			return $query->queryColumn();
+		}
+
 		$results = $query->queryAll();
 
 		if (!$results)
@@ -218,22 +233,7 @@ class ElementsService extends BaseApplicationComponent
 			return array();
 		}
 
-		// Do they just care about the IDs?
-		if ($justIds)
-		{
-			$ids = array();
-
-			foreach ($results as $result)
-			{
-				$ids[] = $result['id'];
-			}
-
-			return $ids;
-		}
-		else
-		{
-			return $this->populateElements($results, $criteria, $contentTable, $fieldColumns, $justIds);
-		}
+		return $this->populateElements($results, $criteria, $contentTable, $fieldColumns);
 	}
 
 	/**
@@ -253,7 +253,6 @@ class ElementsService extends BaseApplicationComponent
 		$locale = $criteria->locale;
 		$elementType = $criteria->getElementType();
 		$indexBy = $criteria->indexBy;
-		$lastElement = null;
 
 		foreach ($results as $result)
 		{
@@ -330,27 +329,17 @@ class ElementsService extends BaseApplicationComponent
 
 			if ($indexBy)
 			{
-				$elements[$element->$indexBy] = $element;
+				// Cast to a string in the case of SingleOptionFieldData, so its
+				// __toString() method gets invoked.
+				$elements[(string)$element->$indexBy] = $element;
 			}
 			else
 			{
 				$elements[] = $element;
 			}
-
-			if ($lastElement)
-			{
-				$lastElement->setNext($element);
-				$element->setPrev($lastElement);
-			}
-			else
-			{
-				$element->setPrev(false);
-			}
-
-			$lastElement = $element;
 		}
 
-		$lastElement->setNext(false);
+		ElementHelper::setNextPrevOnElements($elements);
 
 		// Should we eager-load some elements onto these?
 		if ($criteria->with)
@@ -462,7 +451,7 @@ class ElementsService extends BaseApplicationComponent
 
 						// Get the target elements
 						$customParams = array_merge(
-							// Default to no order and limit, but allow the element type/path criteria to override
+						// Default to no order and limit, but allow the element type/path criteria to override
 							array('order' => null, 'limit' => null),
 							(isset($map['criteria']) ? $map['criteria'] : array()),
 							(isset($pathCriterias[$targetPath]) ? $pathCriterias[$targetPath] : array())
@@ -559,6 +548,7 @@ class ElementsService extends BaseApplicationComponent
 				->from('elements elements');
 
 			$elementsIdColumn = 'elements.id';
+			$elementsIdColumnAlias = 'elementsId';
 			$selectedColumns = $query->getSelect();
 
 			// Normalize with no quotes. setSelect later will properly add them back in.
@@ -570,17 +560,23 @@ class ElementsService extends BaseApplicationComponent
 				$selectedColumns = $elementsIdColumn.', '.$selectedColumns;
 			}
 
-			// Alias elements.id as elementsId
-			$selectedColumns = str_replace($elementsIdColumn, $elementsIdColumn.' AS elementsId', $selectedColumns);
+			// Replace all instances of elements.id with elementsId
+			$selectedColumns = str_replace($elementsIdColumn, $elementsIdColumnAlias, $selectedColumns);
+
+			// Find the position of the first occurrence of elementsId
+			$pos = strpos($selectedColumns, $elementsIdColumnAlias);
+
+			// Make the first occurrence of elementsId an alias for elements.id
+			if ($pos !== false)
+			{
+				$selectedColumns = substr_replace($selectedColumns, $elementsIdColumn.' AS '.$elementsIdColumnAlias, $pos, strlen($elementsIdColumnAlias));
+			}
 
 			$query->setSelect($selectedColumns);
-
 			$masterQuery = craft()->db->createCommand();
 			$masterQuery->params = $query->params;
-
 			$masterQuery->from(sprintf('(%s) derivedElementsTable', $query->getText()));
-
-			$count = $masterQuery->count('derivedElementsTable.elementsId');
+			$count = $masterQuery->count('derivedElementsTable.'.$elementsIdColumnAlias);
 
 			return $count;
 		}
@@ -807,8 +803,8 @@ class ElementsService extends BaseApplicationComponent
 		// ---------------------------------------------------------------------
 
 		// Convert the old childOf and parentOf params to the relatedTo param
-		// childOf(element)  => relatedTo({ source: element })
-		// parentOf(element) => relatedTo({ target: element })
+		// childOf(element)  => relatedTo({ sourceElement: element })
+		// parentOf(element) => relatedTo({ targetElement: element })
 		if (!$criteria->relatedTo && ($criteria->childOf || $criteria->parentOf))
 		{
 			$relatedTo = array('and');
@@ -824,6 +820,7 @@ class ElementsService extends BaseApplicationComponent
 			}
 
 			$criteria->relatedTo = $relatedTo;
+			craft()->deprecator->log('element_old_relation_params', 'The ‘childOf’, ‘childField’, ‘parentOf’, and ‘parentField’ element params have been deprecated. Use ‘relatedTo’ instead.');
 		}
 
 		if ($criteria->relatedTo)
@@ -1148,11 +1145,16 @@ class ElementsService extends BaseApplicationComponent
 				}
 			}
 
-			if ($criteria->level || $criteria->depth)
+			if (!$criteria->level && $criteria->depth)
 			{
-				// TODO: 'depth' is deprecated; use 'level' instead.
-				$level = ($criteria->level ? $criteria->level : $criteria->depth);
-				$query->andWhere(DbHelper::parseParam('structureelements.level', $level, $query->params));
+				$criteria->level = $criteria->depth;
+				$criteria->depth = null;
+				craft()->deprecator->log('element_depth_param', 'The \'depth\' element param has been deprecated. Use \'level\' instead.');
+			}
+
+			if ($criteria->level)
+			{
+				$query->andWhere(DbHelper::parseParam('structureelements.level', $criteria->level, $query->params));
 			}
 		}
 
@@ -1555,6 +1557,12 @@ class ElementsService extends BaseApplicationComponent
 							break;
 						}
 
+						// Go ahead and re-do search index keywords to grab things like "title" in multi-locale installs.
+						if ($isNewElement)
+						{
+							craft()->search->indexElementAttributes($localizedElement);
+						}
+
 						ElementHelper::setUniqueUri($localizedElement);
 
 						$localeRecord->slug = $localizedElement->slug;
@@ -1579,28 +1587,6 @@ class ElementsService extends BaseApplicationComponent
 
 					if ($success)
 					{
-						if (!$isNewElement)
-						{
-							// Delete the rows that don't need to be there anymore
-
-							craft()->db->createCommand()->delete('elements_i18n', array('and',
-								'elementId = :elementId',
-								array('not in', 'locale', $localeIds)
-							), array(
-								':elementId' => $element->id
-							));
-
-							if ($elementType->hasContent())
-							{
-								craft()->db->createCommand()->delete($element->getContentTable(), array('and',
-									'elementId = :elementId',
-									array('not in', 'locale', $localeIds)
-								), array(
-									':elementId' => $element->id
-								));
-							}
-						}
-
 						// Call the field types' onAfterElementSave() methods
 						$fieldLayout = $element->getFieldLayout();
 
@@ -1648,7 +1634,24 @@ class ElementsService extends BaseApplicationComponent
 				$transaction->rollback();
 			}
 
-			throw $e;
+			// Specifically look for a MySQL "data truncation" exception. The use-case
+			// is for a disabled element where validation doesn't run and a text field
+			// is limited in length, but more data is entered than is allowed.
+			if (
+				$e instanceof \CDbException
+				&& isset($e->errorInfo[0])
+				&& $e->errorInfo[0] == 22001
+				&& isset($e->errorInfo[1])
+				&& $e->errorInfo[1] == 1406)
+			{
+				$success = false;
+				craft()->errorHandler->logException($e);
+			}
+			else
+			{
+				throw $e;
+			}
+
 		}
 
 		if ($success)
@@ -1670,6 +1673,23 @@ class ElementsService extends BaseApplicationComponent
 					$element->getContent()->id = null;
 					$element->getContent()->elementId = null;
 				}
+			}
+		}
+
+		if ($success && !$isNewElement)
+		{
+			// Do any element cleanup work onEndRequest outside of transactions to help with deadlocks.
+			$this->_elementCleanup[] = array(
+				'localeIds' => $localeIds,
+				'elementId' => $element->id,
+				'hasContent' => $elementType->hasContent(),
+				'contentTable' => $element->getContentTable(),
+			);
+
+			if (!$this->_listeningForRequestEnd)
+			{
+				craft()->attachEventHandler('onEndRequest', array($this, 'handleRequestEnd'));
+				$this->_listeningForRequestEnd = true;
 			}
 		}
 
@@ -2280,6 +2300,29 @@ class ElementsService extends BaseApplicationComponent
 		}
 
 		$this->_placeholderElements[$element->id][$element->locale] = $element;
+	}
+
+	/**
+	 * Perform element clean-up work.
+	 */
+	public function handleRequestEnd()
+	{
+		while (($info = array_shift($this->_elementCleanup)) !== null)
+		{
+			// Delete the rows that don't need to be there anymore
+			craft()->db->createCommand()->delete(
+				'elements_i18n',
+				array('and', 'elementId = :elementId', array('not in', 'locale', $info['localeIds'])),
+				array(':elementId' => $info['elementId']));
+
+			if ($info['hasContent'])
+			{
+				craft()->db->createCommand()->delete(
+					$info['contentTable'],
+					array('and', 'elementId = :elementId', array('not in', 'locale', $info['localeIds'])),
+					array(':elementId' => $info['elementId']));
+			}
+		}
 	}
 
 	// Events
