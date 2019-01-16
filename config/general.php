@@ -25,25 +25,29 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
-        
+
         'siteUrl' => getenv('APP_URL'),
-        
+
         // Dev Mode (see https://craftcms.com/support/dev-mode)
-        'devMode' => getenv('APP_DEBUG')
+        'devMode' => getenv('APP_DEBUG'),
+        
+        'aliases' => [
+        	'siteUrl' => getenv('APP_URL'),
+        ],
     ],
 
     // Dev environment settings
     'dev' => [
-        
+
     ],
 
     // Staging environment settings
     'staging' => [
-        
+
     ],
 
     // Production environment settings
     'production' => [
-        
+
     ],
 ];
