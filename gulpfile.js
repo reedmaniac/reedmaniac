@@ -14,34 +14,34 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
 
       // Fonts need to be put in the correct spots for CSS versioning
-// 	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './public/build/fonts/');
-// 	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './public/build/fonts/');
-// 	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './public/build/fonts/bootstrap/');
+// 	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './web/build/fonts/');
+// 	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './web/build/fonts/');
+// 	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './web/build/fonts/bootstrap/');
 
 	  // The blog uses these since it cannot get versioned files...yet
-	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './public/fonts/');
-	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './public/fonts/');
-	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './public/fonts/bootstrap/');
+	  mix.copy('./resources/assets/font-awesome/fonts/fontawesome-webfont.*', './web/fonts/');
+	  mix.copy('./resources/assets/font-awesome/fonts/FontAwesome.otf', './web/fonts/');
+	  mix.copy('./node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.*', './web/fonts/bootstrap/');
 
 	  mix.sass([
 	    	'app.scss',
 	       ],
-	       './public/css/sass.css')
+	       './web/css/sass.css')
 
 	      .styles([
 	         '../font-awesome/css/font-awesome.css',
-	         './public/css/sass.css'
+	         './web/css/sass.css'
 	      ],
-	      './public/css/all.css')
+	      './web/css/all.css')
 	      .scripts([
 			'./node_modules/jquery/dist/jquery.js',
 			'./node_modules/bootstrap/dist/js/bootstrap.js',
 			'./resources/assets/js/app.js'
 		],
-		'./public/js/app.js')
-		.version(['public/css/all.css', 'public/js/app.js']);
+		'./web/js/app.js')
+		.version(['web/css/all.css', 'web/js/app.js']);
 
 	    // We combine our SASS CSS file into our all.css, but browsers complain without mapping file.
-	    mix.copy('./public/css/sass.css.map', './public/build/css/');
+	    mix.copy('./web/css/sass.css.map', './web/build/css/');
 
 });
