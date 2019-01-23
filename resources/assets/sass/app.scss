@@ -37,17 +37,15 @@ a.active {
 }
 
 a {
-    color: #1e9bda;
-}
+    color: #2200CC;
 
-a:hover,
-a:focus {
-    opacity: 0.8;
-}
+    &:visited {
+        color: #2200CC;
+    }
 
-a:active,
-a.active {
-    color: #2091DB;
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
 }
 
 h1,
@@ -136,10 +134,10 @@ h6 {
 }
 
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% { 
+  0%, 80%, 100% {
     -webkit-transform: scale(0);
     transform: scale(0);
-  } 40% { 
+  } 40% {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
   }
@@ -155,17 +153,11 @@ h6 {
 
 .navbar-default .navbar-brand {
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	color: #1e9bda;
-}
+	color: #9BDA1E;
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    opacity: 0.8;
-}
-
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-    color: #2091DB;
+    &:hover {
+        color: #9BDA1E;
+    }
 }
 
 .navbar-default .navbar-collapse {
@@ -173,8 +165,8 @@ h6 {
 }
 
 .navbar-default .navbar-toggle {
-    opacity: 0.8;
-    background-color: #1e9bda;
+    background-color: #3974DB;
+    border-color: #fff;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -183,8 +175,7 @@ h6 {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    opacity: 0.8;
-    background-color: #1e9bda;
+    background-color: #395adb;
 }
 
 .navbar-default .nav li a {
@@ -198,8 +189,8 @@ h6 {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
+    color: #fff;
     opacity: 0.8;
-    color: #1e9bda;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -219,7 +210,7 @@ h6 {
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover
 {
-    color: #1e9bda;
+    color: #fff;
     background-color: transparent;
 }
 
@@ -243,7 +234,8 @@ h6 {
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
 {
-    color: #1e9bda;
+    color: #fff;
+    opacity: 0.8;
 }
 
 @media(min-width:768px) {
@@ -572,10 +564,16 @@ section#blog_content
         {
             padding: 0;
             margin-top: 0;
-            margin-bottom: 9px;
-            font-size: 1.5em;
+            margin-bottom: 4px;
+            font-size: 1.75em;
             font-weight: 500;
             line-height: 1em;
+
+            a {
+                &:hover{
+                    text-decoration: none;
+                }
+            }
         }
 
         p, ul, li, blockquote
@@ -586,10 +584,9 @@ section#blog_content
             color: #111111;
 			font-family: "Arial", "Helvetica", "sans-serif";
         }
-        
+
         blockquote
         {
-            font-size: .9em;
             padding: 10px 20px;
 			margin: 0 0 20px;
 			border-left: 5px solid #eee;
@@ -609,13 +606,14 @@ section#blog_content
 
         .blog-entry-posted
         {
-            color: #999;
+            color: #555;
             text-transform: uppercase;
             display: inline-block;
             font-size: 14px;
+            font-weight: bold;
         }
 
-        /* responsiveness 
+        /* responsiveness
         --------------------------------------------- */
 
         @media screen and (min-width : 768px) and (max-width : 1024px)
@@ -660,6 +658,7 @@ section#blog_left_column
 {
     margin: 50px 0 0 0;
     padding: 0 0 0 0;
+    font-size: 1.2em;
 
     .middle-child
     {
@@ -668,15 +667,23 @@ section#blog_left_column
 
     .right-bar
     {
+        margin-top: 10px;
         padding-right: 10px;
         min-height: 200px;
         border-right: 1px solid #000;
+        font-size: 1em;
+
+        a {
+            display: block;
+            margin-bottom: 3px;
+        }
+
     }
-    
+
     .blog-name {
     	font-weight: bold;
     }
-    
+
     .blog-witty-message {
     	font-size: 10px;
     }
@@ -764,13 +771,13 @@ section#blog_left_column
 
 
 .blog-pagination {
-    
+
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     background-color: transparent;
     padding: 12px;
     margin: 0 -20px;
-    
+
     a {
         display: inline-block;
         font-weight: 700;
@@ -781,7 +788,7 @@ section#blog_left_column
 
         span
         {
-            margin: 0 5px;  
+            margin: 0 5px;
         }
     }
 }
