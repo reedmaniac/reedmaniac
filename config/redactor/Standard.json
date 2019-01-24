@@ -3,5 +3,5 @@
   "plugins": ["fullscreen", "video"],
   "linkNewTab": true,
   "toolbarFixed": true,
-  "minHeight": '300px'
+  "minHeight": "300px"
 }
