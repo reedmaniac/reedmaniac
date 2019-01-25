@@ -1,5 +1,7 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import "bigfoot-default";
+
 @mixin border-radius($radius: 0.5em) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
