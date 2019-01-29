@@ -614,8 +614,20 @@ section#blog_content
         img {
             display: block;
             max-width: 100%;
+            max-height: 500px;
             margin: 8px auto;
             @include border-radius(5px);
+        }
+        
+        figure {
+        	figcaption {
+				display: block;
+				font-size: 0.9em;
+				text-align: center;
+				font-style: italic;
+        	}
+        	
+        	margin-bottom: 20px;
         }
 
         img.no-center {
