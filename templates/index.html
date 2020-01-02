@@ -1,7 +1,7 @@
 {% extends "_layout" %}
 
 {% block main %}
-    {% paginate craft.entries.section('blog').order('postDate desc').limit(10) as entries %}
+    {% paginate craft.entries.section('blog').orderBy('postDate desc').limit(10) as entries %}
     
         {% for entry in entries %}
             {% include "entries/_entry_abstract" with { entry: entry } only %}
